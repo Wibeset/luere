@@ -1,0 +1,412 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Luere — Smaller files. Same good looks.</title>
+  <meta name="description" content="Luere is a fast, private, free macOS app to compress, convert, crop and resize images — JPEG, PNG, WebP, AVIF, HEIC and more. Everything runs on your Mac." />
+  <!-- TODO: set the real production domain everywhere it appears (canonical, OG, sitemap, robots, JSON-LD). -->
+  <link rel="canonical" href="https://luere.app/" />
+  <meta name="theme-color" content="#0f766e" />
+  <meta name="author" content="Dominic Martineau" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Luere" />
+  <meta property="og:title" content="Luere — Smaller files. Same good looks." />
+  <meta property="og:description" content="Compress, convert, crop and resize images on your Mac. Free, private, on-device." />
+  <meta property="og:url" content="https://luere.app/" />
+  <meta property="og:image" content="https://luere.app/assets/og.png" />
+  <meta property="og:image:alt" content="Luere — the calm macOS image compressor" />
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Luere — Smaller files. Same good looks." />
+  <meta name="twitter:description" content="Compress, convert, crop and resize images on your Mac. Free, private, on-device." />
+  <meta name="twitter:image" content="https://luere.app/assets/og.png" />
+
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+
+  <!-- Structured data: the app + its maker (helps search engines & AI agents). -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Luere",
+    "applicationCategory": "MultimediaApplication",
+    "operatingSystem": "macOS 26",
+    "description": "A fast, private, free macOS app to compress, convert, crop and resize images — JPEG, PNG, WebP, AVIF, HEIC, TIFF and GIF — with a live before/after preview. Everything runs on-device.",
+    "url": "https://luere.app/",
+    "image": "https://luere.app/assets/og.png",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+    "featureList": [
+      "Compress with quality, target size, or web-optimized modes",
+      "Convert to JPEG, PNG, WebP, AVIF, HEIC, TIFF, GIF",
+      "Live before/after preview at 100%",
+      "Crop, rotate, flip, straighten",
+      "Resize and batch export",
+      "Keep or strip EXIF/GPS metadata",
+      "On-device and private"
+    ],
+    "author": { "@type": "Person", "name": "Dominic Martineau", "url": "https://dominicmartineau.com" }
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./dist/styles.css" />
+</head>
+<body class="bg-white font-sans text-neutral-900 antialiased">
+
+  <!-- ============================ Header ============================ -->
+  <header class="absolute inset-x-0 top-0 z-50">
+    <div class="mx-auto flex h-20 max-w-5xl items-center justify-between px-5 sm:px-6">
+      <a href="#" class="flex items-center gap-3">
+        <span class="grid h-9 w-9 place-items-center rounded-lg bg-brand-500 text-base font-bold text-white">L</span>
+        <span class="text-xl font-semibold tracking-tight">Luere</span>
+      </a>
+      <nav class="hidden items-center gap-9 text-[15px] text-neutral-500 sm:flex">
+        <a href="#features" class="transition hover:text-neutral-900">Features</a>
+        <a href="#how" class="transition hover:text-neutral-900">How it works</a>
+        <a href="#more" class="transition hover:text-neutral-900">More</a>
+      </nav>
+      <button type="button" data-download-trigger class="inline-flex h-11 items-center justify-center rounded-xl bg-brand-500 px-5 text-[15px] font-semibold text-white transition hover:bg-brand-600">
+        Download
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============================ Hero ============================ -->
+    <section class="relative overflow-hidden border-b border-neutral-100 bg-white">
+      <!-- Hero background illustration (compressed with Luere → WebP, 4.8 MB → 117 KB). -->
+      <img aria-hidden="true" src="./assets/hero.webp" alt="" class="pointer-events-none absolute inset-0 h-full w-full object-cover object-center" />
+      <!-- Light veils: just enough white on the left to keep the headline legible;
+           the illustration stays visible across the centre and right. -->
+      <div aria-hidden="true" class="pointer-events-none absolute inset-0 bg-[linear-gradient(to_bottom,white_0%,white_20%,rgba(255,255,255,0.7)_52%,transparent_82%)]"></div>
+
+      <div class="relative mx-auto max-w-5xl px-5 pt-32 pb-24 sm:px-6 sm:pt-44">
+      <p class="reveal text-sm font-semibold uppercase tracking-wide text-brand-600">Compress. Convert. Ship.</p>
+
+      <h1 class="reveal mt-4 max-w-3xl text-4xl font-semibold tracking-tight text-balance sm:text-6xl" style="transition-delay:75ms">
+        Smaller files. Same good looks.
+      </h1>
+
+      <p class="reveal mt-5 max-w-xl text-lg text-pretty text-neutral-500" style="transition-delay:150ms">
+        Luere shrinks, converts, crops and resizes your images — with a live
+        before/after preview so you decide exactly how much quality to trade
+        for size.
+      </p>
+
+      <div class="reveal mt-8 flex flex-wrap items-center gap-3" style="transition-delay:225ms">
+        <button type="button" data-download-trigger class="inline-flex h-11 items-center justify-center gap-2 rounded-xl bg-brand-500 px-6 text-sm font-semibold text-white transition hover:bg-brand-600">
+          Download for macOS
+          <svg class="size-4" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <a href="#features" class="inline-flex h-11 items-center justify-center rounded-xl border border-neutral-200 bg-white px-6 text-sm font-semibold text-neutral-900 transition hover:bg-neutral-50">
+          See what it does
+        </a>
+      </div>
+
+      <p class="reveal mt-6 text-sm text-neutral-500" style="transition-delay:300ms">
+        Free forever · No account · Requires macOS 26 or later
+      </p>
+
+      <!-- ---------------- App window mock (before/after) ----------------
+           TODO: replace this mock with a real screenshot (e.g. <img
+           src="./assets/hero.png">) once you have one. -->
+      <div class="reveal mt-16 w-full overflow-hidden rounded-2xl border border-neutral-200 bg-white text-left shadow-xl shadow-neutral-900/5" style="transition-delay:200ms">
+        <!-- window chrome (light) -->
+        <div class="flex items-center gap-1.5 border-b border-neutral-100 px-4 py-3">
+          <span class="size-2.5 rounded-full bg-neutral-200"></span>
+          <span class="size-2.5 rounded-full bg-neutral-200"></span>
+          <span class="size-2.5 rounded-full bg-neutral-200"></span>
+          <span class="ml-3 text-xs text-neutral-400">Luere — beach.jpg</span>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-[1fr_260px]">
+          <!-- preview with before/after wipe -->
+          <div class="relative min-h-[300px] overflow-hidden bg-neutral-100">
+            <!-- After (compressed look): base layer, slightly softened. -->
+            <img src="./assets/hero.webp" alt="" class="absolute inset-0 h-full w-full object-cover [filter:blur(0.7px)_saturate(0.9)_contrast(0.97)]" />
+            <!-- Before (crisp): clipped + swept by the animation. -->
+            <img src="./assets/hero.webp" alt="" class="mock-before absolute inset-0 h-full w-full object-cover" />
+            <div class="mock-divider absolute inset-y-0 w-px bg-white"></div>
+            <div class="mock-handle absolute top-1/2 grid h-8 w-8 -translate-x-1/2 -translate-y-1/2 place-items-center rounded-full bg-white text-neutral-700 shadow">↔</div>
+            <span class="absolute left-3 top-3 rounded-md bg-black/55 px-2 py-0.5 text-[11px] font-medium text-white">Before</span>
+            <span class="absolute right-3 top-3 rounded-md bg-black/55 px-2 py-0.5 text-[11px] font-medium text-white">After</span>
+          </div>
+          <!-- inspector -->
+          <div class="hidden space-y-5 border-l border-neutral-100 p-5 md:block">
+            <div>
+              <p class="text-[11px] font-medium uppercase tracking-wide text-neutral-400">Format</p>
+              <div class="mt-1.5 rounded-xl border border-neutral-200 px-3 py-2 text-sm text-neutral-900">WebP</div>
+            </div>
+            <div>
+              <p class="text-[11px] font-medium uppercase tracking-wide text-neutral-400">Compression</p>
+              <div class="mt-1.5 flex overflow-hidden rounded-xl border border-neutral-200 text-xs">
+                <span class="flex-1 px-2 py-1.5 text-center text-neutral-500">Quality</span>
+                <span class="flex-1 bg-neutral-900 px-2 py-1.5 text-center font-medium text-white">Target</span>
+                <span class="flex-1 px-2 py-1.5 text-center text-neutral-500">Web</span>
+              </div>
+            </div>
+            <div>
+              <p class="text-[11px] font-medium uppercase tracking-wide text-neutral-400">Resize</p>
+              <div class="mt-1.5 rounded-xl border border-neutral-200 px-3 py-2 text-sm text-neutral-900">Fit within 1600×1600</div>
+            </div>
+            <div>
+              <p class="text-[11px] font-medium uppercase tracking-wide text-neutral-400">Crop</p>
+              <div class="mt-1.5 rounded-xl border border-neutral-200 px-3 py-2 text-sm text-neutral-500">None</div>
+            </div>
+            <div>
+              <p class="text-[11px] font-medium uppercase tracking-wide text-neutral-400">Metadata</p>
+              <div class="mt-1.5 flex overflow-hidden rounded-xl border border-neutral-200 text-xs">
+                <span class="flex-1 px-2 py-1.5 text-center text-neutral-500">Keep all</span>
+                <span class="flex-1 bg-neutral-900 px-2 py-1.5 text-center font-medium text-white">Remove all</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- action bar -->
+        <div class="flex items-center justify-between gap-3 border-t border-neutral-100 px-4 py-3">
+          <div class="min-w-0">
+            <p class="truncate text-xs font-medium text-neutral-800">beach.jpg</p>
+            <p class="text-[11px] text-neutral-400">2912 × 1632 → WebP</p>
+          </div>
+          <span class="hidden rounded-full bg-neutral-100 px-2.5 py-1 text-[11px] font-medium text-neutral-600 sm:inline">2.4 MB → 380 KB · 84% smaller</span>
+          <button type="button" class="inline-flex h-8 items-center rounded-lg bg-brand-500 px-4 text-xs font-semibold text-white">Export</button>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <!-- ============================ How it works ============================ -->
+    <section id="how" class="mx-auto max-w-5xl px-5 pt-20 pb-12 sm:px-6 sm:pt-28 sm:pb-14">
+      <div class="reveal">
+        <h2 class="text-3xl font-semibold tracking-tight sm:text-4xl">Three steps, no learning curve.</h2>
+        <p class="mt-4 max-w-lg text-neutral-500">Drop, tune, export. The preview shows you the result as you go.</p>
+      </div>
+      <div class="mt-14 grid gap-10 sm:grid-cols-3">
+        <div class="reveal">
+          <div class="flex items-center gap-3">
+            <span class="flex size-10 shrink-0 items-center justify-center border border-neutral-200 text-sm font-semibold tabular-nums">1</span>
+            <h3 class="text-lg font-semibold">Drop your images</h3>
+          </div>
+          <p class="mt-3 text-sm leading-relaxed text-neutral-500">Drag a file, a selection, or an entire folder onto the window.</p>
+        </div>
+        <div class="reveal" style="transition-delay:75ms">
+          <div class="flex items-center gap-3">
+            <span class="flex size-10 shrink-0 items-center justify-center border border-neutral-200 text-sm font-semibold tabular-nums">2</span>
+            <h3 class="text-lg font-semibold">Tune the recipe</h3>
+          </div>
+          <p class="mt-3 text-sm leading-relaxed text-neutral-500">Pick a format, compression and size — the preview updates live.</p>
+        </div>
+        <div class="reveal" style="transition-delay:150ms">
+          <div class="flex items-center gap-3">
+            <span class="flex size-10 shrink-0 items-center justify-center border border-neutral-200 text-sm font-semibold tabular-nums">3</span>
+            <h3 class="text-lg font-semibold">Export</h3>
+          </div>
+          <p class="mt-3 text-sm leading-relaxed text-neutral-500">One image or the whole batch, to a folder of your choice.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ Features ============================ -->
+    <section id="features">
+      <div class="mx-auto max-w-5xl px-5 pt-12 pb-12 sm:px-6 sm:pt-14 sm:pb-14">
+        <div class="reveal">
+          <h2 class="text-3xl font-semibold tracking-tight sm:text-4xl">Everything you need to ship an image.</h2>
+          <p class="mt-4 max-w-lg text-neutral-500">The essentials, done well — one recipe, applied to one image or a thousand.</p>
+        </div>
+
+        <div class="mt-14 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          <!-- card -->
+          <div class="reveal rounded-2xl border border-neutral-200 bg-white p-6">
+            <h3 class="text-base font-semibold">Three ways to compress</h3>
+            <p class="mt-1.5 text-sm leading-relaxed text-neutral-500">Dial in <span class="text-neutral-800">Quality</span> by hand, hit a <span class="text-neutral-800">Target size</span> budget automatically, or let <span class="text-neutral-800">Web-optimized</span> choose in one click.</p>
+          </div>
+          <div class="reveal rounded-2xl border border-neutral-200 bg-white p-6" style="transition-delay:50ms">
+            <h3 class="text-base font-semibold">7 formats</h3>
+            <p class="mt-1.5 text-sm leading-relaxed text-neutral-500">JPEG, PNG, WebP, AVIF, HEIC, TIFF and GIF — including modern codecs that shrink far below JPEG.</p>
+          </div>
+          <div class="reveal rounded-2xl border border-neutral-200 bg-white p-6" style="transition-delay:100ms">
+            <h3 class="text-base font-semibold">Live before/after</h3>
+            <p class="mt-1.5 text-sm leading-relaxed text-neutral-500">A pixel-for-pixel compare slider that jumps to 100%, so you see what compression costs — no guessing.</p>
+          </div>
+          <div class="reveal rounded-2xl border border-neutral-200 bg-white p-6">
+            <h3 class="text-base font-semibold">Crop Studio</h3>
+            <p class="mt-1.5 text-sm leading-relaxed text-neutral-500">Crop, rotate, flip and straighten with a proper editor — not a fiddly afterthought.</p>
+          </div>
+          <div class="reveal rounded-2xl border border-neutral-200 bg-white p-6" style="transition-delay:50ms">
+            <h3 class="text-base font-semibold">Resize &amp; rename</h3>
+            <p class="mt-1.5 text-sm leading-relaxed text-neutral-500">Longest edge, width, height, fit-within or percentage — and rename on export with a prefix or suffix.</p>
+          </div>
+          <div class="reveal rounded-2xl border border-neutral-200 bg-white p-6" style="transition-delay:100ms">
+            <h3 class="text-base font-semibold">Presets &amp; metadata</h3>
+            <p class="mt-1.5 text-sm leading-relaxed text-neutral-500">Save a recipe once and reuse it. Keep EXIF, or strip GPS &amp; camera info on the way out.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ More / Puuunch ============================
+         TODO: confirm the real Puuunch URL and one-liner. UTM params are set. -->
+    <section id="more" class="mx-auto max-w-5xl px-5 pt-12 pb-20 sm:px-6 sm:pt-14 sm:pb-28">
+      <p class="reveal text-sm font-semibold uppercase tracking-wide text-brand-600">Also by the maker of Luere</p>
+
+      <div class="reveal mt-8 grid gap-10 sm:grid-cols-2 sm:gap-12">
+        <!-- Puuunch -->
+        <div class="flex flex-col">
+          <h3 class="text-2xl font-semibold tracking-tight sm:text-3xl">Need to keep track of your hours?</h3>
+          <p class="mt-3 text-neutral-500">Puuunch is a fast, beautiful timesheet for freelancers and small teams — log your time, review the week, and send it for approval, without the accounting-software feel.</p>
+          <a href="https://puuunch.com/?utm_source=luere&utm_medium=microsite&utm_campaign=luere-funnel"
+             class="mt-6 inline-flex h-11 w-fit items-center justify-center gap-2 rounded-xl border border-neutral-200 bg-white px-6 text-sm font-semibold text-neutral-900 transition hover:bg-neutral-50">
+            Try Puuunch
+            <svg class="size-4" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+
+        <!-- Luere Icon Studio -->
+        <div class="flex flex-col sm:border-l sm:border-neutral-100 sm:pl-12">
+          <h3 class="text-2xl font-semibold tracking-tight sm:text-3xl">Need every icon &amp; favicon size?</h3>
+          <p class="mt-3 text-neutral-500">Luere Icon Studio turns a single logo into every icon and favicon you need — .icns, .ico, PNG sets, Apple touch icons and the web manifest — exported in one click.</p>
+          <!-- TODO: set the Luere Icon Studio URL. -->
+          <a href="#"
+             class="mt-6 inline-flex h-11 w-fit items-center justify-center gap-2 rounded-xl border border-neutral-200 bg-white px-6 text-sm font-semibold text-neutral-900 transition hover:bg-neutral-50">
+            Try Luere Icon Studio
+            <svg class="size-4" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================ Footer ============================ -->
+  <footer class="relative isolate overflow-hidden bg-brand-600 text-white">
+    <div aria-hidden="true" class="dot-field pointer-events-none absolute inset-0 -z-10 text-white opacity-[0.12]"></div>
+
+    <!-- Closing CTA -->
+    <div class="mx-auto max-w-5xl px-5 pt-24 pb-28 text-center sm:px-6 sm:pt-28 sm:pb-36">
+      <h2 class="mx-auto max-w-2xl text-4xl font-semibold tracking-tight text-balance sm:text-6xl">Make your images lighter — in seconds.</h2>
+      <p class="mx-auto mt-5 max-w-lg text-lg text-white/70">Free, private, and fast. It all happens on your Mac — no account, no catch.</p>
+      <button type="button" data-download-trigger class="mt-10 inline-flex h-14 items-center justify-center gap-2 rounded-2xl bg-white px-10 text-base font-semibold text-brand-600 transition hover:bg-white/90">
+        Download Luere — it's free
+        <svg class="size-5" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 3v7m0 0l3-3m-3 3L5 7M3 13h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <p class="mt-5 text-xs text-white/60">Requires macOS 26 or later · Also coming to the Mac App Store</p>
+    </div>
+
+    <!-- Footer line -->
+    <div class="mx-auto flex max-w-5xl flex-col items-center justify-between gap-3 px-5 pb-10 text-sm text-white/70 sm:flex-row sm:px-6">
+      <div class="flex items-center gap-2.5">
+        <span class="grid h-6 w-6 place-items-center rounded-md bg-white text-xs font-bold text-brand-600">L</span>
+        <span class="font-medium text-white">Luere</span>
+        <span class="text-white/50">© <span id="year">2026</span></span>
+      </div>
+      <div class="flex flex-wrap items-center justify-center gap-x-6 gap-y-2">
+        <a href="https://puuunch.com/?utm_source=luere&utm_medium=microsite&utm_campaign=luere-footer" class="transition hover:text-white">Puuunch</a>
+        <!-- TODO: set your Ko-fi / Stripe / Buy Me a Coffee URL. -->
+        <a href="#" class="transition hover:text-white">Buy me a coffee</a>
+        <span class="flex items-center gap-1.5">Made with
+          <span class="heartbeat text-red-400" aria-hidden="true"><svg class="size-3.5" viewBox="0 0 24 24" fill="currentColor"><path d="M11.645 20.91l-.007-.003-.022-.012a15.247 15.247 0 01-.383-.218 25.18 25.18 0 01-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0112 5.052 5.5 5.5 0 0116.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 01-4.244 3.17 15.247 15.247 0 01-.383.219l-.022.012-.007.004-.003.001a.752.752 0 01-.704 0l-.003-.001z" /></svg></span>
+          <span class="sr-only">love</span> in Canada <span aria-hidden="true">🇨🇦</span> by <a href="https://dominicmartineau.com" target="_blank" rel="noopener" class="font-medium text-white underline-offset-4 transition hover:underline">Dominic Martineau</a>
+        </span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================ Download modal ============================ -->
+  <div id="download-modal" class="fixed inset-0 z-[100] hidden items-center justify-center p-4"
+       role="dialog" aria-modal="true" aria-labelledby="download-modal-title">
+    <div data-modal-close class="absolute inset-0 bg-neutral-900/40 backdrop-blur-sm"></div>
+    <div class="relative w-full max-w-sm rounded-2xl border border-neutral-200 bg-white p-6 shadow-xl sm:p-7">
+      <button type="button" data-modal-close aria-label="Close"
+              class="absolute right-4 top-4 grid size-8 place-items-center rounded-lg text-neutral-400 transition hover:bg-neutral-100 hover:text-neutral-900">
+        <svg class="size-4" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 4l8 8M12 4l-8 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+      </button>
+
+      <h2 id="download-modal-title" class="text-xl font-semibold tracking-tight">Download Luere</h2>
+      <p class="mt-2 text-sm text-neutral-500">Luere is completely free. If it saves you time, a coffee is always appreciated — never required.</p>
+
+      <div class="mt-6 flex flex-col gap-2.5">
+        <!-- TODO: point href to your notarized DMG (e.g. ./downloads/Luere-0.1.0.dmg). -->
+        <a href="#" data-dmg
+           class="inline-flex h-11 items-center justify-center gap-2 rounded-xl bg-brand-500 px-6 text-sm font-semibold text-white transition hover:bg-brand-600">
+          Download for macOS
+          <svg class="size-4" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 3v7m0 0l3-3m-3 3L5 7M3 13h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <!-- TODO: set your Ko-fi / Stripe / Buy Me a Coffee URL. -->
+        <a href="#" data-coffee
+           class="inline-flex h-11 items-center justify-center gap-2 rounded-xl border border-neutral-200 bg-white px-6 text-sm font-semibold text-neutral-900 transition hover:bg-neutral-50">
+          <span aria-hidden="true">☕</span> Buy me a coffee
+        </a>
+      </div>
+
+      <p class="mt-4 text-center text-xs text-neutral-400">macOS 26 or later · .dmg</p>
+    </div>
+  </div>
+
+  <!-- ============================ Scripts ============================ -->
+  <script>
+    // Current year in the footer.
+    (function () {
+      var y = document.getElementById("year");
+      if (y) y.textContent = new Date().getFullYear();
+    })();
+
+    // Download modal: open from any [data-download-trigger], close on the close
+    // buttons / backdrop / Escape.
+    (function () {
+      var modal = document.getElementById("download-modal");
+      if (!modal) return;
+      var lastFocused = null;
+
+      function open() {
+        lastFocused = document.activeElement;
+        modal.classList.remove("hidden");
+        modal.classList.add("flex");
+        document.body.style.overflow = "hidden";
+        var dmg = modal.querySelector("[data-dmg]");
+        if (dmg) dmg.focus();
+      }
+      function close() {
+        modal.classList.add("hidden");
+        modal.classList.remove("flex");
+        document.body.style.overflow = "";
+        if (lastFocused && lastFocused.focus) lastFocused.focus();
+      }
+
+      document.querySelectorAll("[data-download-trigger]").forEach(function (el) {
+        el.addEventListener("click", function (e) { e.preventDefault(); open(); });
+      });
+      modal.querySelectorAll("[data-modal-close]").forEach(function (el) {
+        el.addEventListener("click", close);
+      });
+      document.addEventListener("keydown", function (e) {
+        if (e.key === "Escape" && !modal.classList.contains("hidden")) close();
+      });
+    })();
+  </script>
+
+  <!-- Scroll reveal — dependency-free, mirrors Puuunch's on-scroll fade-in. -->
+  <script>
+    (function () {
+      var els = document.querySelectorAll(".reveal");
+      if (!("IntersectionObserver" in window)) {
+        els.forEach(function (el) { el.classList.add("is-visible"); });
+        return;
+      }
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (e.isIntersecting) { e.target.classList.add("is-visible"); io.unobserve(e.target); }
+        });
+      }, { rootMargin: "0px 0px -10% 0px", threshold: 0.05 });
+      els.forEach(function (el) { io.observe(el); });
+    })();
+  </script>
+</body>
+</html>

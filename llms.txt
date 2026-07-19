@@ -1,0 +1,24 @@
+# Luere
+
+> Luere is a free, private, native macOS app to compress, convert, crop and resize images. Everything runs on-device — nothing is uploaded. Tagline: "Smaller files. Same good looks."
+
+Luere turns large images into small files without visibly hurting quality, with a live before/after preview so the user decides the trade between size and quality.
+
+## Key facts
+- Platform: macOS 26 or later. Native (not Electron).
+- Price: 100% free — no account, no trial, no "Pro" tier.
+- Privacy: all processing happens on the user's Mac; no uploads, no telemetry.
+
+## Features
+- Compression modes: Quality (manual), Target size (hit a byte budget), Web-optimized (one click).
+- Formats: JPEG, PNG, WebP, AVIF, HEIC, TIFF, GIF.
+- Live before/after compare preview at 100%.
+- Crop Studio: crop, rotate, flip, straighten.
+- Resize: longest edge, width, height, fit-within, percentage.
+- Batch export; rename on export with a prefix/suffix.
+- Metadata: keep or strip EXIF/GPS.
+
+## Links
+- Home & download (.dmg): https://luere.app/
+- Maker: Dominic Martineau — https://dominicmartineau.com
+- Also by the maker: Puuunch (timesheets for freelancers & small teams) — https://puuunch.com
