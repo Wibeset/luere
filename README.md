@@ -59,18 +59,4 @@ macOS 26 or later.
 
 ---
 
-<details>
-<summary>About this repository</summary>
-
-This repo holds **Luere's marketing website** — a static page built with HTML and
-[Tailwind CSS](https://tailwindcss.com), served via GitHub Pages.
-
-```bash
-npm install
-npm run dev      # watch + rebuild styles
-npm run build    # minified production CSS
-```
-
-Made by [Dominic Martineau](https://dominicmartineau.com).
-
-</details>
+<p align="center">Made by <a href="https://dominicmartineau.com">Dominic Martineau</a>.</p>
