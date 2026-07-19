@@ -1,86 +1,76 @@
-# Luere website
+<p align="center">
+  <img src="assets/hero.webp" alt="Luere — the calm macOS image compressor" width="100%" />
+</p>
 
-Marketing microsite for **Luere** — the free, private macOS image compressor
-("Smaller files. Same good looks."). It's the direct-download funnel and a
-cross-promo hub for the maker's other projects (Puuunch, Luere Icon Studio).
+<h1 align="center">Luere</h1>
 
-Static **HTML + Tailwind CSS v4**. No framework, no build server — one page, one
-stylesheet, a sprinkle of vanilla JS. Deployable to any static host.
+<p align="center">
+  <strong>Smaller files. Same good looks.</strong><br />
+  Free, private image compression for macOS.
+</p>
 
-## Stack
+<p align="center">
+  <a href="https://luere.app"><strong>Download for macOS →</strong></a>
+</p>
 
-- **HTML** — a single `index.html`.
-- **Tailwind CSS v4** — compiled from `src/input.css` to `dist/styles.css` via
-  the Tailwind CLI. Design tokens (brand teal, font, animations) live in the
-  `@theme` / base layers of `src/input.css`.
-- **Font** — Instrument Sans (Google Fonts; see SEO.md to self-host later).
-- **Vanilla JS** (inline in `index.html`) — download modal, scroll-reveal, footer
-  year. No dependencies at runtime.
+<p align="center">
+  <em>macOS 26+ · 100% free · Runs entirely on your Mac</em>
+</p>
 
-## Structure
+---
 
-```
-luere-website/
-├── index.html          # the whole page
-├── src/input.css       # Tailwind entry + theme, animations, base rules
-├── dist/styles.css     # compiled CSS (gitignored; produced by build)
-├── assets/
-│   └── hero.webp       # hero illustration, compressed by Luere (4.8 MB → 117 KB)
-├── favicon.svg         # teal "L" mark
-├── robots.txt          # allows all incl. AI crawlers; links sitemap
-├── sitemap.xml
-├── llms.txt            # brief written for AI assistants (discovery)
-├── SEO.md              # SEO & AI-discovery plan
-├── package.json        # build/dev scripts
-└── README.md
-```
+Luere shrinks, converts, crops and resizes your images — with a **live
+before/after preview** so you decide exactly how much quality to trade for size.
+Everything happens on your Mac. Nothing is ever uploaded.
 
-## Develop
+## Features
+
+- **Three ways to compress** — dial in **Quality** by hand, hit a **Target size**
+  budget automatically, or let **Web-optimized** choose in one click.
+- **7 formats** — JPEG, PNG, WebP, AVIF, HEIC, TIFF and GIF, including modern
+  codecs that shrink far below JPEG.
+- **Live before/after** — a pixel-for-pixel compare slider that jumps to 100%, so
+  you see what compression costs. No guessing.
+- **Crop Studio** — crop, rotate, flip and straighten with a proper editor.
+- **Resize & rename** — longest edge, width, height, fit-within or percentage,
+  and rename on export with a prefix or suffix.
+- **Presets & metadata** — save a recipe once and reuse it; keep EXIF or strip
+  GPS & camera info on the way out.
+- **Batch** — drop a whole folder and export hundreds of images in parallel.
+
+## Why Luere
+
+- **Private by design** — every image is processed on your Mac. No uploads, no
+  accounts, no telemetry.
+- **Free, no strings** — no trial, no subscription, no "Pro" upsell.
+- **A real Mac app** — quick to launch, quiet to use. No Electron bloat.
+
+## Download
+
+**[Download Luere for macOS →](https://luere.app)** — free, forever. Requires
+macOS 26 or later.
+
+## Also by the maker
+
+- **[Puuunch](https://puuunch.com)** — a fast, beautiful timesheet for freelancers
+  and small teams.
+- **Luere Icon Studio** — turn one logo into every icon and favicon format in a
+  single export.
+
+---
+
+<details>
+<summary>About this repository</summary>
+
+This repo holds **Luere's marketing website** — a static page built with HTML and
+[Tailwind CSS](https://tailwindcss.com), served via GitHub Pages.
 
 ```bash
 npm install
-npm run dev      # watches src/input.css → dist/styles.css
+npm run dev      # watch + rebuild styles
+npm run build    # minified production CSS
 ```
-
-Open `index.html` directly, or serve it: `npx serve`.
-
-**Previewing:** open in **Safari**. Safari caches `file://` CSS/JS aggressively —
-after a rebuild, hard-reload with **⌘⌥R** ("Reload From Origin") or the new CSS
-won't apply. To render without a browser window (e.g. headless), any Chromium
-`--headless --screenshot` works; note headless clamps the layout viewport to
-~480px, so it can't screenshot true phone widths (the layout itself is fluid).
-
-## Build
-
-```bash
-npm run build    # minified dist/styles.css
-```
-
-Deploy the folder to any static host (Netlify, Vercel, Cloudflare Pages, GitHub
-Pages). `node_modules/` and `dist/` are gitignored; configure the host to run
-`npm install && npm run build`, or commit `dist/` if the host only serves files.
-
-## Design system
-
-- **Light, monochrome + one teal accent** (`--color-brand-500: #0f766e`), matching
-  the Puuunch family. The teal is drawn from the hero illustration's sky.
-- **Type** — Instrument Sans; large, tight tracking, `text-balance` headlines.
-- **Components** — pill buttons (`rounded-xl`, teal primary / white-bordered
-  secondary), cards `rounded-2xl border-neutral-200`, section rhythm ~py-28.
-- **Motion** — scroll-reveal fade-ins, an animated before/after wipe in the hero
-  app mock, a heartbeat in the footer. All respect `prefers-reduced-motion`.
-- **Buttons get `cursor: pointer`** via a base rule (Tailwind v4 dropped the
-  default).
-
-## Content still to wire up (search `TODO` in the source)
-
-- **Production domain** — replace `https://luere.app/` in the canonical, OG tags,
-  `sitemap.xml`, `robots.txt`, JSON-LD, and `llms.txt`.
-- **Download link** — point the modal's `.dmg` button at the notarized build.
-- **Buy me a coffee** — a Stripe Payment Link (footer + modal).
-- **Luere Icon Studio** — real URL for the second promo (UTM like Puuunch).
-- **OG image** — generate `assets/og.png` (1200×630).
-
-## License / credit
 
 Made by [Dominic Martineau](https://dominicmartineau.com).
+
+</details>
