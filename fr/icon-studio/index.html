@@ -3,31 +3,31 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Luere — Des fichiers plus légers. Toujours aussi beaux.</title>
-  <meta name="description" content="Luere est une app macOS rapide, privée et gratuite pour compresser, convertir, recadrer et redimensionner vos images — JPEG, PNG, WebP, AVIF, HEIC et plus. Tout se passe sur votre Mac." />
-  <link rel="canonical" href="https://luere.app/fr/" />
-  <link rel="alternate" hreflang="en" href="https://luere.app/" />
-  <link rel="alternate" hreflang="fr" href="https://luere.app/fr/" />
-  <link rel="alternate" hreflang="x-default" href="https://luere.app/" />
-  <meta name="theme-color" content="#0f766e" />
+  <title>Luere Icon Studio — Un logo. Toutes les icônes.</title>
+  <meta name="description" content="Luere Icon Studio est une app macOS rapide, privée et gratuite qui transforme un seul logo en toutes les tailles d'icônes et de favicons dont vous avez besoin — .icns, .ico, jeux de PNG, icônes Apple touch, jeu AppIcon iOS et manifest web — exportés en un clic." />
+  <link rel="canonical" href="https://luere.app/fr/icon-studio/" />
+  <link rel="alternate" hreflang="en" href="https://luere.app/icon-studio/" />
+  <link rel="alternate" hreflang="fr" href="https://luere.app/fr/icon-studio/" />
+  <link rel="alternate" hreflang="x-default" href="https://luere.app/icon-studio/" />
+  <meta name="theme-color" content="#9a3412" />
   <meta name="author" content="Dominic Martineau" />
   <meta name="robots" content="index, follow, max-image-preview:large" />
 
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="Luere" />
+  <meta property="og:site_name" content="Luere Icon Studio" />
   <meta property="og:locale" content="fr_CA" />
-  <meta property="og:title" content="Luere — Des fichiers plus légers. Toujours aussi beaux." />
-  <meta property="og:description" content="Compressez, convertissez, recadrez et redimensionnez vos images sur votre Mac. Gratuit, privé, sur l'appareil." />
-  <meta property="og:url" content="https://luere.app/fr/" />
-  <meta property="og:image" content="https://luere.app/assets/og.png" />
-  <meta property="og:image:alt" content="Luere — le compresseur d'images tranquille pour macOS" />
+  <meta property="og:title" content="Luere Icon Studio — Un logo. Toutes les icônes." />
+  <meta property="og:description" content="Transformez un seul logo en toutes les tailles d'icônes et de favicons — .icns, .ico, jeux de PNG, icônes Apple touch et manifest web. Sur votre Mac, en un clic." />
+  <meta property="og:url" content="https://luere.app/fr/icon-studio/" />
+  <meta property="og:image" content="https://luere.app/assets/og-icon-studio.png" />
+  <meta property="og:image:alt" content="Luere Icon Studio — toutes les tailles d'icônes à partir d'un seul logo" />
 
   <!-- Twitter / X -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Luere — Des fichiers plus légers. Toujours aussi beaux." />
-  <meta name="twitter:description" content="Compressez, convertissez, recadrez et redimensionnez vos images sur votre Mac. Gratuit, privé, sur l'appareil." />
-  <meta name="twitter:image" content="https://luere.app/assets/og.png" />
+  <meta name="twitter:title" content="Luere Icon Studio — Un logo. Toutes les icônes." />
+  <meta name="twitter:description" content="Transformez un seul logo en toutes les tailles d'icônes et de favicons — sur votre Mac, en un clic." />
+  <meta name="twitter:image" content="https://luere.app/assets/og-icon-studio.png" />
 
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
 
@@ -36,13 +36,13 @@
   {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
-    "name": "Luere",
-    "applicationCategory": "MultimediaApplication",
-    "operatingSystem": "macOS 26",
+    "name": "Luere Icon Studio",
+    "applicationCategory": "DeveloperApplication",
+    "operatingSystem": "macOS 14",
     "inLanguage": "fr",
-    "description": "Une app macOS rapide, privée et gratuite pour compresser, convertir, recadrer et redimensionner vos images — JPEG, PNG, WebP, AVIF, HEIC, TIFF et GIF — avec un aperçu avant/après en direct. Tout se passe sur l'appareil.",
-    "url": "https://luere.app/fr/",
-    "image": "https://luere.app/assets/og.png",
+    "description": "Une app macOS rapide, privée et gratuite qui transforme un seul logo en tous les formats d'icônes et de favicons dont vous avez besoin — favicons web (.ico + PNG), un .icns macOS, un jeu AppIcon iOS et des .ico + PNG Windows — plus un extrait HTML prêt à coller et un manifest web. Tout se passe sur l'appareil.",
+    "url": "https://luere.app/fr/icon-studio/",
+    "image": "https://luere.app/assets/og-icon-studio.png",
     "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
     "author": { "@type": "Person", "name": "Dominic Martineau", "url": "https://dominicmartineau.com" }
   }
@@ -51,18 +51,29 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Koh+Santepheap:wght@400;700;900&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="../dist/styles.css" />
+  <link rel="stylesheet" href="../../dist/styles.css" />
+
+  <!-- Palette automnale, tirée de l'illustration du hero — surcharge locale des
+       jetons de marque partagés, pour que cette sous-page soit orange brûlé
+       tandis que le site Luere principal reste sarcelle. -->
+  <style>
+    :root {
+      --color-brand-500: #c2410c;
+      --color-brand-600: #9a3412;
+    }
+  </style>
 </head>
 <body class="bg-white font-sans text-neutral-900 antialiased">
 
   <!-- ============================ En-tête ============================ -->
   <header class="absolute inset-x-0 top-0 z-50">
     <div class="mx-auto flex h-20 max-w-5xl items-center justify-between px-5 sm:px-6">
-      <a href="#" class="flex items-center">
+      <a href="#" class="flex items-baseline gap-2">
         <span class="font-logo text-2xl font-bold leading-none tracking-tight text-neutral-900">LUERE</span>
+        <span class="text-sm font-semibold tracking-tight text-brand-600">Icon Studio</span>
       </a>
       <nav class="hidden items-center gap-9 text-[15px] text-neutral-500 sm:flex">
-        <a href="#features" class="transition hover:text-neutral-900">Fonctions</a>
+        <a href="#features" class="transition hover:text-neutral-900">Formats</a>
         <a href="#how" class="transition hover:text-neutral-900">Comment ça marche</a>
       </nav>
       <button type="button" data-download-trigger class="inline-flex h-11 items-center justify-center rounded-xl bg-brand-500 px-5 text-[15px] font-semibold text-white transition hover:bg-brand-600">
@@ -74,20 +85,24 @@
   <main>
     <!-- ============================ Hero ============================ -->
     <section class="relative overflow-hidden border-b border-neutral-100 bg-white">
-      <img aria-hidden="true" src="../assets/hero.webp" alt="" class="pointer-events-none absolute inset-0 h-full w-full object-cover object-center" />
+      <!-- Illustration de fond du hero (compressée avec Luere → WebP, 6,6 Mo → 296 Ko). -->
+      <img aria-hidden="true" src="../../assets/icon-studio-hero.webp" alt="" class="pointer-events-none absolute inset-0 h-full w-full object-cover object-center" />
+      <!-- Voiles clairs : juste assez de blanc à gauche pour garder le titre lisible ;
+           l'illustration reste visible au centre et à droite. -->
       <div aria-hidden="true" class="pointer-events-none absolute inset-0 bg-[linear-gradient(to_bottom,white_0%,white_20%,rgba(255,255,255,0.7)_52%,transparent_82%)]"></div>
 
       <div class="relative mx-auto max-w-5xl px-5 pt-32 pb-24 sm:px-6 sm:pt-44">
-      <p class="reveal text-sm font-semibold uppercase tracking-wide text-brand-600">Compressez. Convertissez. Publiez.</p>
+      <p class="reveal text-sm font-semibold uppercase tracking-wide text-brand-600">Déposez. Cochez. Exportez.</p>
 
       <h1 class="reveal mt-4 max-w-3xl text-4xl font-semibold tracking-tight text-balance sm:text-6xl" style="transition-delay:75ms">
-        Des fichiers plus légers. Toujours aussi beaux.
+        Un logo. Toutes les icônes.
       </h1>
 
       <p class="reveal mt-5 max-w-xl text-lg text-pretty text-neutral-500" style="transition-delay:150ms">
-        Luere compresse, convertit, recadre et redimensionne vos images — avec un
-        aperçu avant/après en direct pour choisir exactement combien de qualité
-        échanger contre du poids.
+        Luere Icon Studio transforme une seule image en toutes les tailles
+        d'icônes et de favicons dont vous avez besoin — web, macOS, iOS et
+        Windows — écrites dans un dossier bien rangé à côté de votre source, en
+        un seul clic.
       </p>
 
       <div class="reveal mt-8 flex flex-wrap items-center gap-3" style="transition-delay:225ms">
@@ -96,69 +111,62 @@
           <svg class="size-4" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </button>
         <a href="#features" class="inline-flex h-11 items-center justify-center rounded-xl border border-neutral-200 bg-white px-6 text-sm font-semibold text-neutral-900 transition hover:bg-neutral-50">
-          Voir ce qu'il fait
+          Voir les formats
         </a>
       </div>
 
       <p class="reveal mt-6 text-sm text-neutral-500" style="transition-delay:300ms">
-        Gratuit à vie · Sans compte · Requiert macOS 26 ou plus récent
+        Gratuit pour toujours · Sans compte · Nécessite macOS 14 ou plus récent
       </p>
 
-      <!-- Maquette de la fenêtre de l'app (avant/après) -->
+      <!-- ---------------- Maquette de l'app (déposer → formats → exporter) ----------------
+           TODO : remplacer cette maquette par une vraie capture d'écran (p. ex.
+           <img src="../../assets/icon-studio.png">) une fois disponible. -->
       <div class="reveal mt-16 w-full overflow-hidden rounded-2xl border border-neutral-200 bg-white text-left shadow-xl shadow-neutral-900/5" style="transition-delay:200ms">
+        <!-- barre de fenêtre (claire) -->
         <div class="flex items-center gap-1.5 border-b border-neutral-100 px-4 py-3">
           <span class="size-2.5 rounded-full bg-neutral-200"></span>
           <span class="size-2.5 rounded-full bg-neutral-200"></span>
           <span class="size-2.5 rounded-full bg-neutral-200"></span>
-          <span class="ml-3 text-xs text-neutral-400">Luere — plage.jpg</span>
+          <span class="ml-3 text-xs text-neutral-400">Luere Icon Studio — logo.png</span>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-[1fr_260px]">
-          <div class="relative min-h-[300px] overflow-hidden bg-neutral-100">
-            <img src="../assets/hero.webp" alt="" class="absolute inset-0 h-full w-full object-cover [filter:blur(0.7px)_saturate(0.9)_contrast(0.97)]" />
-            <img src="../assets/hero.webp" alt="" class="mock-before absolute inset-0 h-full w-full object-cover" />
-            <div class="mock-divider absolute inset-y-0 w-px bg-white"></div>
-            <div class="mock-handle absolute top-1/2 grid h-8 w-8 -translate-x-1/2 -translate-y-1/2 place-items-center rounded-full bg-white text-neutral-700 shadow">↔</div>
-            <span class="absolute left-3 top-3 rounded-md bg-black/55 px-2 py-0.5 text-[11px] font-medium text-white">Avant</span>
-            <span class="absolute right-3 top-3 rounded-md bg-black/55 px-2 py-0.5 text-[11px] font-medium text-white">Après</span>
+          <!-- zone de dépôt + aperçu de la source -->
+          <div class="relative grid min-h-[300px] place-items-center bg-neutral-50 p-8">
+            <div class="w-full max-w-xs rounded-2xl border-2 border-dashed border-neutral-300 bg-white/70 p-8 text-center">
+              <span class="mx-auto grid size-16 place-items-center rounded-2xl bg-brand-500 text-2xl font-bold text-white">L</span>
+              <p class="mt-4 text-sm font-medium text-neutral-800">logo.png</p>
+              <p class="text-[11px] text-neutral-400">1024 × 1024 · prêt</p>
+            </div>
           </div>
-          <div class="hidden space-y-5 border-l border-neutral-100 p-5 md:block">
-            <div>
-              <p class="text-[11px] font-medium uppercase tracking-wide text-neutral-400">Format</p>
-              <div class="mt-1.5 rounded-xl border border-neutral-200 px-3 py-2 text-sm text-neutral-900">WebP</div>
-            </div>
-            <div>
-              <p class="text-[11px] font-medium uppercase tracking-wide text-neutral-400">Compression</p>
-              <div class="mt-1.5 flex overflow-hidden rounded-xl border border-neutral-200 text-xs">
-                <span class="flex-1 px-2 py-1.5 text-center text-neutral-500">Qualité</span>
-                <span class="flex-1 bg-neutral-900 px-2 py-1.5 text-center font-medium text-white">Cible</span>
-                <span class="flex-1 px-2 py-1.5 text-center text-neutral-500">Web</span>
-              </div>
-            </div>
-            <div>
-              <p class="text-[11px] font-medium uppercase tracking-wide text-neutral-400">Redimensionner</p>
-              <div class="mt-1.5 rounded-xl border border-neutral-200 px-3 py-2 text-sm text-neutral-900">Tenir dans 1600×1600</div>
-            </div>
-            <div>
-              <p class="text-[11px] font-medium uppercase tracking-wide text-neutral-400">Recadrage</p>
-              <div class="mt-1.5 rounded-xl border border-neutral-200 px-3 py-2 text-sm text-neutral-500">Aucun</div>
-            </div>
-            <div>
-              <p class="text-[11px] font-medium uppercase tracking-wide text-neutral-400">Métadonnées</p>
-              <div class="mt-1.5 flex overflow-hidden rounded-xl border border-neutral-200 text-xs">
-                <span class="flex-1 px-2 py-1.5 text-center text-neutral-500">Tout garder</span>
-                <span class="flex-1 bg-neutral-900 px-2 py-1.5 text-center font-medium text-white">Tout retirer</span>
-              </div>
-            </div>
+          <!-- liste des formats -->
+          <div class="hidden space-y-2.5 border-l border-neutral-100 p-5 md:block">
+            <p class="text-[11px] font-medium uppercase tracking-wide text-neutral-400">Formats</p>
+            <label class="flex items-center gap-2.5 rounded-xl border border-neutral-200 px-3 py-2 text-sm text-neutral-900">
+              <span class="grid size-4 place-items-center rounded bg-brand-500 text-[10px] text-white">✓</span> Favicons web
+            </label>
+            <label class="flex items-center gap-2.5 rounded-xl border border-neutral-200 px-3 py-2 text-sm text-neutral-900">
+              <span class="grid size-4 place-items-center rounded bg-brand-500 text-[10px] text-white">✓</span> .icns macOS
+            </label>
+            <label class="flex items-center gap-2.5 rounded-xl border border-neutral-200 px-3 py-2 text-sm text-neutral-900">
+              <span class="grid size-4 place-items-center rounded bg-brand-500 text-[10px] text-white">✓</span> Jeu AppIcon iOS
+            </label>
+            <label class="flex items-center gap-2.5 rounded-xl border border-neutral-200 px-3 py-2 text-sm text-neutral-500">
+              <span class="size-4 rounded border border-neutral-300"></span> .ico + PNG Windows
+            </label>
           </div>
         </div>
 
+        <!-- barre d'action -->
         <div class="flex items-center justify-between gap-3 border-t border-neutral-100 px-4 py-3">
-          <div class="min-w-0">
-            <p class="truncate text-xs font-medium text-neutral-800">plage.jpg</p>
-            <p class="text-[11px] text-neutral-400">2912 × 1632 → WebP</p>
+          <div class="min-w-0 flex-1">
+            <p class="truncate text-xs font-medium text-neutral-800">logo-icons/</p>
+            <div class="mt-1.5 h-1.5 w-full overflow-hidden rounded-full bg-neutral-100">
+              <div class="h-full w-2/3 rounded-full bg-brand-500"></div>
+            </div>
           </div>
-          <span class="hidden rounded-full bg-neutral-100 px-2.5 py-1 text-[11px] font-medium text-neutral-600 sm:inline">2,4 Mo → 380 Ko · 84 % plus petit</span>
+          <span class="hidden rounded-full bg-neutral-100 px-2.5 py-1 text-[11px] font-medium text-neutral-600 sm:inline">28 fichiers</span>
           <button type="button" class="inline-flex h-8 items-center rounded-lg bg-brand-500 px-4 text-xs font-semibold text-white">Exporter</button>
         </div>
       </div>
@@ -169,93 +177,95 @@
     <section id="how" class="mx-auto max-w-5xl px-5 pt-20 pb-12 sm:px-6 sm:pt-28 sm:pb-14">
       <div class="reveal">
         <h2 class="text-3xl font-semibold tracking-tight sm:text-4xl">Trois étapes, aucune courbe d'apprentissage.</h2>
-        <p class="mt-4 max-w-lg text-neutral-500">Déposez, ajustez, exportez. L'aperçu vous montre le résultat au fur et à mesure.</p>
+        <p class="mt-4 max-w-lg text-neutral-500">Déposez, cochez, exportez. Les fichiers arrivent dans un dossier juste à côté de votre image source.</p>
       </div>
       <div class="mt-14 grid gap-10 sm:grid-cols-3">
         <div class="reveal">
           <div class="flex items-center gap-3">
             <span class="flex size-10 shrink-0 items-center justify-center border border-neutral-200 text-sm font-semibold tabular-nums">1</span>
-            <h3 class="text-lg font-semibold">Déposez vos images</h3>
+            <h3 class="text-lg font-semibold">Déposez un logo</h3>
           </div>
-          <p class="mt-3 text-sm leading-relaxed text-neutral-500">Glissez un fichier, une sélection ou un dossier entier sur la fenêtre.</p>
+          <p class="mt-3 text-sm leading-relaxed text-neutral-500">Glissez n'importe quelle image — une source 1024×1024 donne les résultats les plus nets.</p>
         </div>
         <div class="reveal" style="transition-delay:75ms">
           <div class="flex items-center gap-3">
             <span class="flex size-10 shrink-0 items-center justify-center border border-neutral-200 text-sm font-semibold tabular-nums">2</span>
-            <h3 class="text-lg font-semibold">Ajustez la recette</h3>
+            <h3 class="text-lg font-semibold">Cochez les formats</h3>
           </div>
-          <p class="mt-3 text-sm leading-relaxed text-neutral-500">Choisissez un format, une compression et une taille — l'aperçu se met à jour en direct.</p>
+          <p class="mt-3 text-sm leading-relaxed text-neutral-500">Web, macOS, iOS, Windows — ne choisissez que ceux dont vous avez besoin.</p>
         </div>
         <div class="reveal" style="transition-delay:150ms">
           <div class="flex items-center gap-3">
             <span class="flex size-10 shrink-0 items-center justify-center border border-neutral-200 text-sm font-semibold tabular-nums">3</span>
             <h3 class="text-lg font-semibold">Exportez</h3>
           </div>
-          <p class="mt-3 text-sm leading-relaxed text-neutral-500">Une image ou tout le lot, vers le dossier de votre choix.</p>
+          <p class="mt-3 text-sm leading-relaxed text-neutral-500">Tout se génère hors du fil principal dans un dossier <span class="text-neutral-800">&lt;nom&gt;-icons/</span>.</p>
         </div>
       </div>
     </section>
 
-    <!-- ============================ Fonctions ============================ -->
+    <!-- ============================ Formats ============================ -->
     <section id="features">
       <div class="mx-auto max-w-5xl px-5 pt-12 pb-12 sm:px-6 sm:pt-14 sm:pb-14">
         <div class="reveal">
-          <h2 class="text-3xl font-semibold tracking-tight sm:text-4xl">Tout ce qu'il faut pour livrer une image.</h2>
-          <p class="mt-4 max-w-lg text-neutral-500">L'essentiel, bien fait — une recette, appliquée à une image ou à un millier.</p>
+          <h2 class="text-3xl font-semibold tracking-tight sm:text-4xl">Chaque taille, chaque plateforme.</h2>
+          <p class="mt-4 max-w-lg text-neutral-500">Une image source en entrée, un jeu d'icônes complet en sortie — rien à configurer, plus rien à redimensionner à la main.</p>
         </div>
 
         <div class="mt-14 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          <!-- carte -->
           <div class="reveal rounded-2xl border border-neutral-200 bg-white p-6">
-            <h3 class="text-base font-semibold">Trois façons de compresser</h3>
-            <p class="mt-1.5 text-sm leading-relaxed text-neutral-500">Réglez la <span class="text-neutral-800">Qualité</span> à la main, visez une <span class="text-neutral-800">Taille cible</span> automatiquement, ou laissez <span class="text-neutral-800">Web-optimisé</span> choisir en un clic.</p>
+            <h3 class="text-base font-semibold">Favicons web</h3>
+            <p class="mt-1.5 text-sm leading-relaxed text-neutral-500"><span class="text-neutral-800">favicon.ico</span> (16/32/48), jeu de PNG, <span class="text-neutral-800">apple-touch-icon</span> et <span class="text-neutral-800">android-chrome</span> 192/512.</p>
           </div>
           <div class="reveal rounded-2xl border border-neutral-200 bg-white p-6" style="transition-delay:50ms">
-            <h3 class="text-base font-semibold">7 formats</h3>
-            <p class="mt-1.5 text-sm leading-relaxed text-neutral-500">JPEG, PNG, WebP, AVIF, HEIC, TIFF et GIF — dont des codecs modernes bien plus légers que le JPEG.</p>
+            <h3 class="text-base font-semibold">.icns macOS</h3>
+            <p class="mt-1.5 text-sm leading-relaxed text-neutral-500">Un seul <span class="text-neutral-800">icon.icns</span> compilé de 16 jusqu'à 1024, prêt pour votre app.</p>
           </div>
           <div class="reveal rounded-2xl border border-neutral-200 bg-white p-6" style="transition-delay:100ms">
-            <h3 class="text-base font-semibold">Avant/après en direct</h3>
-            <p class="mt-1.5 text-sm leading-relaxed text-neutral-500">Un curseur de comparaison pixel par pixel qui passe à 100 %, pour voir ce que coûte la compression — sans deviner.</p>
+            <h3 class="text-base font-semibold">Jeu AppIcon iOS</h3>
+            <p class="mt-1.5 text-sm leading-relaxed text-neutral-500">Un <span class="text-neutral-800">AppIcon.appiconset</span> complet avec un master 1024px et <span class="text-neutral-800">Contents.json</span> — à glisser directement dans Xcode.</p>
           </div>
           <div class="reveal rounded-2xl border border-neutral-200 bg-white p-6">
-            <h3 class="text-base font-semibold">Studio de recadrage</h3>
-            <p class="mt-1.5 text-sm leading-relaxed text-neutral-500">Recadrez, pivotez, retournez et redressez avec un vrai éditeur — pas un ajout bâclé.</p>
+            <h3 class="text-base font-semibold">.ico + PNG Windows</h3>
+            <p class="mt-1.5 text-sm leading-relaxed text-neutral-500"><span class="text-neutral-800">favicon.ico</span> multi-résolution (16/32/48/256) plus des PNG autonomes de 16 à 256.</p>
           </div>
           <div class="reveal rounded-2xl border border-neutral-200 bg-white p-6" style="transition-delay:50ms">
-            <h3 class="text-base font-semibold">Redimensionner et renommer</h3>
-            <p class="mt-1.5 text-sm leading-relaxed text-neutral-500">Plus grand côté, largeur, hauteur, « tenir dans » ou pourcentage — et renommez à l'export avec un préfixe ou un suffixe.</p>
+            <h3 class="text-base font-semibold">Manifest &amp; extrait HTML</h3>
+            <p class="mt-1.5 text-sm leading-relaxed text-neutral-500">Un <span class="text-neutral-800">site.webmanifest</span> et un <span class="text-neutral-800">head-snippet.html</span> prêt à coller — le branchement se fait au copier-coller.</p>
           </div>
           <div class="reveal rounded-2xl border border-neutral-200 bg-white p-6" style="transition-delay:100ms">
-            <h3 class="text-base font-semibold">Préréglages et métadonnées</h3>
-            <p class="mt-1.5 text-sm leading-relaxed text-neutral-500">Enregistrez une recette et réutilisez-la. Gardez l'EXIF, ou retirez le GPS et les infos d'appareil à l'export.</p>
+            <h3 class="text-base font-semibold">Net &amp; privé</h3>
+            <p class="mt-1.5 text-sm leading-relaxed text-neutral-500">Redimensionnement CoreGraphics de haute qualité, uniquement des frameworks Apple, aucune dépendance — et rien ne quitte jamais votre Mac.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ============================ Plus ============================ -->
+    <!-- ============================ Plus ============================
+         TODO : confirmer la vraie URL et l'accroche de Puuunch. Les paramètres UTM sont définis. -->
     <section id="more" class="mx-auto max-w-5xl px-5 pt-12 pb-20 sm:px-6 sm:pt-14 sm:pb-28">
-      <p class="reveal text-sm font-semibold uppercase tracking-wide text-brand-600">Aussi par le créateur de Luere</p>
+      <p class="reveal text-sm font-semibold uppercase tracking-wide text-brand-600">Aussi par le créateur de Luere Icon Studio</p>
 
       <div class="reveal mt-8 grid gap-10 sm:grid-cols-2 sm:gap-12">
-        <!-- Puuunch -->
+        <!-- Luere (compresseur) -->
         <div class="flex flex-col">
-          <h3 class="text-2xl font-semibold tracking-tight sm:text-3xl">Besoin de suivre vos heures ?</h3>
-          <p class="mt-3 text-neutral-500">Puuunch est une feuille de temps rapide et soignée pour pigistes et petites équipes — inscrivez votre temps, révisez la semaine et envoyez-la pour approbation, sans le côté logiciel comptable.</p>
-          <a href="https://puuunch.com/?utm_source=luere&utm_medium=microsite&utm_campaign=luere-funnel&utm_content=fr"
+          <h3 class="text-2xl font-semibold tracking-tight sm:text-3xl">Besoin de réduire vos images aussi ?</h3>
+          <p class="mt-3 text-neutral-500">Luere compresse, convertit, recadre et redimensionne vos images — avec un aperçu avant/après en direct pour décider exactement combien de qualité échanger contre du poids. Gratuit, privé, sur votre Mac.</p>
+          <a href="../index.html"
              class="mt-6 inline-flex h-11 w-fit items-center justify-center gap-2 rounded-xl border border-neutral-200 bg-white px-6 text-sm font-semibold text-neutral-900 transition hover:bg-neutral-50">
-            Essayer Puuunch
+            Essayer Luere
             <svg class="size-4" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </a>
         </div>
 
-        <!-- Luere Icon Studio -->
+        <!-- Puuunch -->
         <div class="flex flex-col sm:border-l sm:border-neutral-100 sm:pl-12">
-          <h3 class="text-2xl font-semibold tracking-tight sm:text-3xl">Besoin de toutes les tailles d'icônes et de favicons ?</h3>
-          <p class="mt-3 text-neutral-500">Luere Icon Studio transforme un seul logo en tous les formats d'icônes et de favicons — .icns, .ico, jeux de PNG, icônes Apple touch et le manifest web — exportés en un clic.</p>
-          <a href="./icon-studio/index.html"
+          <h3 class="text-2xl font-semibold tracking-tight sm:text-3xl">Besoin de suivre vos heures ?</h3>
+          <p class="mt-3 text-neutral-500">Puuunch est une feuille de temps rapide et élégante pour les pigistes et les petites équipes — enregistrez votre temps, révisez la semaine et envoyez-la pour approbation, sans l'allure d'un logiciel comptable.</p>
+          <a href="https://puuunch.com/?utm_source=luere-icon-studio&utm_medium=microsite&utm_campaign=luere-funnel"
              class="mt-6 inline-flex h-11 w-fit items-center justify-center gap-2 rounded-xl border border-neutral-200 bg-white px-6 text-sm font-semibold text-neutral-900 transition hover:bg-neutral-50">
-            Essayer Luere Icon Studio
+            Essayer Puuunch
             <svg class="size-4" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </a>
         </div>
@@ -268,29 +278,31 @@
   <footer class="relative isolate overflow-hidden bg-brand-600 text-white">
     <div aria-hidden="true" class="dot-field pointer-events-none absolute inset-0 -z-10 text-white opacity-[0.12]"></div>
 
-    <!-- CTA de clôture -->
+    <!-- Appel à l'action de clôture -->
     <div class="mx-auto max-w-5xl px-5 pt-24 pb-28 text-center sm:px-6 sm:pt-28 sm:pb-36">
-      <h2 class="mx-auto max-w-2xl text-4xl font-semibold tracking-tight text-balance sm:text-6xl">Allégez vos images — en quelques secondes.</h2>
+      <h2 class="mx-auto max-w-2xl text-4xl font-semibold tracking-tight text-balance sm:text-6xl">Toutes les tailles d'icônes — à partir d'un seul logo.</h2>
       <p class="mx-auto mt-5 max-w-lg text-lg text-white/70">Gratuit, privé et rapide. Tout se passe sur votre Mac — sans compte, sans piège.</p>
       <button type="button" data-download-trigger class="mt-10 inline-flex h-14 items-center justify-center gap-2 rounded-2xl bg-white px-10 text-base font-semibold text-brand-600 transition hover:bg-white/90">
-        Télécharger Luere — c'est gratuit
+        Télécharger Luere Icon Studio — c'est gratuit
         <svg class="size-5" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 3v7m0 0l3-3m-3 3L5 7M3 13h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </button>
-      <p class="mt-5 text-xs text-white/60">Requiert macOS 26 ou plus récent · Bientôt sur le Mac App Store</p>
+      <p class="mt-5 text-xs text-white/60">Nécessite macOS 14 ou plus récent · Bientôt aussi sur le Mac App Store</p>
     </div>
 
     <!-- Ligne de pied de page -->
     <div class="mx-auto flex max-w-5xl flex-col items-center justify-between gap-3 px-5 pb-10 text-sm text-white/70 sm:flex-row sm:px-6">
       <div class="flex items-center gap-2.5">
         <span class="font-logo text-lg font-bold leading-none text-white">LUERE</span>
+        <span class="text-white/70">Icon Studio</span>
         <span class="text-white/50">© <span id="year">2026</span></span>
       </div>
       <div class="flex flex-wrap items-center justify-center gap-x-6 gap-y-2">
-        <a href="../index.html" hreflang="en" class="transition hover:text-white">English</a>
+        <a href="../../icon-studio/index.html" hreflang="en" class="transition hover:text-white">English</a>
+        <a href="../index.html" class="transition hover:text-white">Luere</a>
         <!-- TODO: set your Ko-fi / Stripe / Buy Me a Coffee URL. -->
         <a href="#" class="transition hover:text-white">Offrez-moi un café</a>
         <span class="flex items-center gap-1.5">Fait avec
-          <span class="heartbeat text-red-400" aria-hidden="true"><svg class="size-3.5" viewBox="0 0 24 24" fill="currentColor"><path d="M11.645 20.91l-.007-.003-.022-.012a15.247 15.247 0 01-.383-.218 25.18 25.18 0 01-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0112 5.052 5.5 5.5 0 0116.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 01-4.244 3.17 15.247 15.247 0 01-.383.219l-.022.012-.007.004-.003.001a.752.752 0 01-.704 0l-.003-.001z" /></svg></span>
+          <span class="heartbeat text-red-200" aria-hidden="true"><svg class="size-3.5" viewBox="0 0 24 24" fill="currentColor"><path d="M11.645 20.91l-.007-.003-.022-.012a15.247 15.247 0 01-.383-.218 25.18 25.18 0 01-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0112 5.052 5.5 5.5 0 0116.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 01-4.244 3.17 15.247 15.247 0 01-.383.219l-.022.012-.007.004-.003.001a.752.752 0 01-.704 0l-.003-.001z" /></svg></span>
           <span class="sr-only">amour</span> au Canada <span aria-hidden="true">🇨🇦</span> par <a href="https://dominicmartineau.com" target="_blank" rel="noopener" class="font-medium text-white underline-offset-4 transition hover:underline">Dominic Martineau</a>
         </span>
       </div>
@@ -307,12 +319,13 @@
         <svg class="size-4" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 4l8 8M12 4l-8 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
       </button>
 
-      <h2 id="download-modal-title" class="text-xl font-semibold tracking-tight">Télécharger Luere</h2>
-      <p class="mt-2 text-sm text-neutral-500">Luere est entièrement gratuit. S'il vous fait gagner du temps, un café est toujours apprécié — jamais obligatoire.</p>
+      <h2 id="download-modal-title" class="text-xl font-semibold tracking-tight">Télécharger Luere Icon Studio</h2>
+      <p class="mt-2 text-sm text-neutral-500">Luere Icon Studio est entièrement gratuit. S'il vous fait gagner du temps, un café est toujours apprécié — jamais obligatoire.</p>
 
       <div class="mt-6 flex flex-col gap-2.5">
-        <!-- TODO: point href to your notarized DMG (e.g. ../downloads/Luere-0.1.0.dmg). -->
-        <a href="#" data-dmg
+        <!-- Résout toujours vers l'asset LuereIconStudio.dmg de la dernière release GitHub,
+             ce lien n'a donc jamais besoin d'être mis à jour d'une version à l'autre. -->
+        <a href="https://github.com/dominicmartineau/luere-icon-studio/releases/latest/download/LuereIconStudio.dmg" data-dmg
            class="inline-flex h-11 items-center justify-center gap-2 rounded-xl bg-brand-500 px-6 text-sm font-semibold text-white transition hover:bg-brand-600">
           Télécharger pour macOS
           <svg class="size-4" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 3v7m0 0l3-3m-3 3L5 7M3 13h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -324,21 +337,25 @@
         </a>
       </div>
 
-      <p class="mt-4 text-center text-xs text-neutral-400">macOS 26 ou plus récent · .dmg</p>
+      <p class="mt-4 text-center text-xs text-neutral-400">macOS 14 ou plus récent · .dmg</p>
     </div>
   </div>
 
   <!-- ============================ Scripts ============================ -->
   <script>
+    // Année courante dans le pied de page.
     (function () {
       var y = document.getElementById("year");
       if (y) y.textContent = new Date().getFullYear();
     })();
 
+    // Modale de téléchargement : ouvrir depuis tout [data-download-trigger],
+    // fermer sur les boutons de fermeture / l'arrière-plan / Échap.
     (function () {
       var modal = document.getElementById("download-modal");
       if (!modal) return;
       var lastFocused = null;
+
       function open() {
         lastFocused = document.activeElement;
         modal.classList.remove("hidden");
@@ -353,6 +370,7 @@
         document.body.style.overflow = "";
         if (lastFocused && lastFocused.focus) lastFocused.focus();
       }
+
       document.querySelectorAll("[data-download-trigger]").forEach(function (el) {
         el.addEventListener("click", function (e) { e.preventDefault(); open(); });
       });
@@ -365,6 +383,7 @@
     })();
   </script>
 
+  <!-- Révélation au défilement — sans dépendance, comme le site principal. -->
   <script>
     (function () {
       var els = document.querySelectorAll(".reveal");

@@ -6,6 +6,9 @@
   --font-sans: "Instrument Sans", ui-sans-serif, system-ui, -apple-system,
     "Segoe UI", sans-serif;
 
+  /* Logo wordmark — text only, no icon. */
+  --font-logo: "Koh Santepheap", ui-serif, Georgia, serif;
+
   /* Brand teal — drawn from the hero illustration's sky, deep enough for
      white text. Replaces the old monochrome black primary. */
   --color-brand-500: #0f766e;
