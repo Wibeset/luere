@@ -60,3 +60,7 @@ macOS 26 or later.
 ---
 
 <p align="center">Made by <a href="https://dominicmartineau.com">Dominic Martineau</a>.</p>
+
+<p align="center">
+  <img alt="Total downloads" src="https://img.shields.io/github/downloads/dominicmartineau/luere/total?label=downloads&color=brightgreen" />
+</p>
