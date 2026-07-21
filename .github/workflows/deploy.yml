@@ -1,0 +1,61 @@
+name: Deploy site to GitHub Pages
+
+# When to run: every push to main, plus a manual "Run workflow" button.
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+# Permissions this workflow needs. GitHub's OIDC deploy requires all three.
+permissions:
+  contents: read   # to check out the repo
+  pages: write     # to publish to Pages
+  id-token: write  # to prove the deploy came from this workflow (OIDC)
+
+# Never run two deploys at once; if a new push arrives mid-deploy, cancel the old one.
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  # 1) Build the site into a Pages artifact.
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm   # caches ~/.npm keyed on package-lock.json → faster installs
+
+      - name: Install dependencies (exact versions from the lockfile)
+        run: npm ci
+
+      - name: Build the CSS (Tailwind → dist/styles.css)
+        run: npm run build
+
+      - name: Drop node_modules so it isn't published
+        run: rm -rf node_modules
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload the site as a Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: .   # the repo root IS the site (index.html lives here)
+
+  # 2) Deploy the artifact to Pages.
+  deploy:
+    needs: build   # only runs if build succeeded
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
