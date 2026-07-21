@@ -23,12 +23,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check out the repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Set up Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v5
         with:
-          node-version: 20
+          node-version: 22
           cache: npm   # caches ~/.npm keyed on package-lock.json → faster installs
 
       - name: Install dependencies (exact versions from the lockfile)
@@ -44,7 +44,7 @@ jobs:
         uses: actions/configure-pages@v5
 
       - name: Upload the site as a Pages artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v4
         with:
           path: .   # the repo root IS the site (index.html lives here)
 
