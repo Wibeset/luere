@@ -21,5 +21,4 @@ Luere turns large images into small files without visibly hurting quality, with 
 ## Links
 - Home & download (.dmg): https://luere.app/
 - Maker: Dominic Martineau — https://dominicmartineau.com
-- Also by the maker: Puuunch (timesheets for freelancers & small teams) — https://puuunch.com
 - French version: https://luere.app/fr/

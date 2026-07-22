@@ -60,6 +60,42 @@ html, body {
   .mock-divider, .mock-handle { animation: none; left: 50%; }
 }
 
+/* ── Icon Studio hero: scripted app walkthrough ──────────────────────────
+   The #icon-demo preview plays a short loop — drop an image, deselect the
+   Windows format, hit Export and fill the progress bar over 2s — driven by
+   state classes (d-loaded / d-uncheck4 / d-exporting / d-done) toggled from
+   the inline script. With no JS or reduced motion it rests in the frame the
+   HTML ships: image loaded, all four formats ticked, ready to export. */
+#icon-demo .demo-empty,
+#icon-demo .demo-loaded { transition: opacity 0.45s ease; }
+#icon-demo .demo-empty  { opacity: 1; }
+#icon-demo .demo-loaded { opacity: 0; }
+#icon-demo.d-loaded .demo-empty  { opacity: 0; }
+#icon-demo.d-loaded .demo-loaded { opacity: 1; }
+
+/* 4th format toggles off mid-loop. */
+#icon-demo .demo-check { transition: background-color 0.25s ease, border-color 0.25s ease; }
+#icon-demo .demo-tick  { transition: opacity 0.2s ease; }
+#icon-demo.d-uncheck4 #demo-check4 { background-color: transparent; border-color: #d4d4d4; }
+#icon-demo.d-uncheck4 #demo-check4 .demo-tick { opacity: 0; }
+#icon-demo.d-uncheck4 .demo-row4 .demo-title { color: #737373; }
+
+/* Progress bar: 0 → 100% over exactly 2s while exporting, held when done. */
+#icon-demo .demo-fill { width: 0; }
+#icon-demo.d-exporting .demo-fill { width: 100%; transition: width 2s linear; }
+#icon-demo.d-done .demo-fill { width: 100%; }
+
+/* Reveal in Finder fades in only once the export finishes. */
+#icon-demo .demo-reveal { opacity: 0; transform: translateY(2px); transition: opacity 0.3s ease, transform 0.3s ease; }
+#icon-demo.d-done .demo-reveal { opacity: 1; transform: none; }
+
+/* Export button press feedback. */
+#icon-demo .demo-export { transition: transform 0.12s ease, background-color 0.2s ease; }
+#icon-demo .demo-export.is-press { transform: scale(0.94); }
+
+/* Suppress descendant transitions while the script sets the opening frame. */
+#icon-demo.demo-init * { transition: none !important; }
+
 /* Beating heart in the footer "Made with ♥ in Canada" line. */
 @keyframes heartbeat {
   0%, 100% { transform: scale(1); }
