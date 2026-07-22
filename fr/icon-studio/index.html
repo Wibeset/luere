@@ -51,9 +51,14 @@
   }
   </script>
 
+  <!-- Google Fonts, off the critical path: preload the stylesheet, then promote
+       it to a real stylesheet on load so it never blocks first paint. display=swap
+       means text shows immediately in the system fallback and re-renders once the
+       webfonts arrive. -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Koh+Santepheap:wght@400;700;900&display=swap" rel="stylesheet" />
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Koh+Santepheap:wght@400;700;900&display=swap" onload="this.onload=null;this.rel='stylesheet'" />
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Koh+Santepheap:wght@400;700;900&display=swap" /></noscript>
   <link rel="stylesheet" href="../../dist/styles.css" />
 
   <!-- Palette automnale, tirée de l'illustration du hero — surcharge locale des
