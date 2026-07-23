@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Luere Icon Studio — One logo. Every icon.</title>
-  <meta name="description" content="Luere Icon Studio is a fast, private, free macOS app that turns a single logo into every icon and favicon you need — .icns, .ico, PNG sets, Apple touch icons, an iOS AppIcon set and the web manifest — exported in one click." />
+  <meta name="description" content="Luere Icon Studio is a fast, private, free macOS app that turns a single logo into every icon and favicon you need — .icns, .ico, PNG sets, favicon.svg, PWA maskable icons, Apple touch icons, an iOS AppIcon set and the web manifest — exported in one click." />
   <!-- TODO: set the real production domain everywhere it appears (canonical, OG, sitemap, robots, JSON-LD). -->
   <link rel="canonical" href="https://luere.app/icon-studio/" />
   <link rel="alternate" hreflang="en" href="https://luere.app/icon-studio/" />
@@ -18,7 +18,7 @@
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Luere Icon Studio" />
   <meta property="og:title" content="Luere Icon Studio — One logo. Every icon." />
-  <meta property="og:description" content="Turn a single logo into every icon and favicon size — .icns, .ico, PNG sets, Apple touch icons and the web manifest. On your Mac, in one click." />
+  <meta property="og:description" content="Turn a single logo into every icon and favicon size — .icns, .ico, PNG sets, favicon.svg, PWA maskable icons, Apple touch icons and the web manifest. On your Mac, in one click." />
   <meta property="og:url" content="https://luere.app/icon-studio/" />
   <meta property="og:image" content="https://luere.app/assets/og-icon-studio.png" />
   <meta property="og:image:alt" content="Luere Icon Studio — every icon size from one logo" />
@@ -42,13 +42,14 @@
     "name": "Luere Icon Studio",
     "applicationCategory": "DeveloperApplication",
     "operatingSystem": "macOS 14",
-    "description": "A fast, private, free macOS app that turns one logo into every icon and favicon format you need — web favicons (.ico + PNGs), a macOS .icns, an iOS AppIcon set and Windows .ico + PNGs — plus a ready-to-paste HTML head snippet and web manifest. Everything runs on-device.",
+    "description": "A fast, private, free macOS app that turns one logo into every icon and favicon format you need — web favicons (.ico + .svg + PNGs), PWA maskable icons and manifest, a macOS .icns plus an AppIcon.appiconset, an iOS AppIcon set and Windows .ico + PNGs — plus a ready-to-paste HTML head snippet and web manifest. Everything runs on-device.",
     "url": "https://luere.app/icon-studio/",
     "image": "https://luere.app/assets/og-icon-studio.png",
     "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
     "featureList": [
-      "Web favicons: favicon.ico (16/32/48), PNG set, apple-touch-icon, android-chrome",
-      "macOS icon.icns compiled from 16 to 1024",
+      "Web favicons: favicon.ico (16/32/48), favicon.svg, PNG set, apple-touch-icon, android-chrome",
+      "PWA: standard and maskable icons plus a full web app manifest",
+      "macOS icon.icns (16 to 1024) plus an AppIcon.appiconset for Xcode",
       "iOS AppIcon.appiconset ready to drop into Xcode",
       "Windows multi-resolution .ico plus standalone PNGs",
       "site.webmanifest and a ready-to-paste HTML head snippet",
@@ -140,8 +141,8 @@
       </div><!-- /left column -->
 
       <!-- ---------------- App window mock (right column) ----------------
-           Mirrors the real macOS app: a single 500×500 window with a dashed
-           drop zone, a Formats checklist (all four selected by default) and a
+           Mirrors the real macOS app: a single 500×560 window with a dashed
+           drop zone, a Formats checklist (all five selected by default) and a
            footer with the progress bar, Reveal in Finder and Export buttons.
            TODO: replace with a real screenshot (e.g. <img
            src="../assets/icon-studio.png">) once you have one. -->
@@ -182,14 +183,21 @@
               <span class="demo-check mt-0.5 grid size-4 shrink-0 place-items-center rounded border border-transparent bg-brand-500 text-[10px] text-white"><span class="demo-tick">✓</span></span>
               <span class="min-w-0">
                 <span class="block text-sm text-neutral-900">Web favicons</span>
-                <span class="block text-xs text-neutral-400">favicon.ico, PNGs, apple-touch, manifest, HTML</span>
+                <span class="block text-xs text-neutral-400">favicon.ico, PNGs, SVG, apple-touch, manifest, HTML</span>
               </span>
             </label>
             <label class="flex items-start gap-2.5">
               <span class="demo-check mt-0.5 grid size-4 shrink-0 place-items-center rounded border border-transparent bg-brand-500 text-[10px] text-white"><span class="demo-tick">✓</span></span>
               <span class="min-w-0">
-                <span class="block text-sm text-neutral-900">macOS .icns</span>
-                <span class="block text-xs text-neutral-400">16→1024 compiled into icon.icns</span>
+                <span class="block text-sm text-neutral-900">PWA</span>
+                <span class="block text-xs text-neutral-400">maskable + standard icons + manifest</span>
+              </span>
+            </label>
+            <label class="flex items-start gap-2.5">
+              <span class="demo-check mt-0.5 grid size-4 shrink-0 place-items-center rounded border border-transparent bg-brand-500 text-[10px] text-white"><span class="demo-tick">✓</span></span>
+              <span class="min-w-0">
+                <span class="block text-sm text-neutral-900">macOS icons</span>
+                <span class="block text-xs text-neutral-400">icon.icns + AppIcon.appiconset</span>
               </span>
             </label>
             <label class="flex items-start gap-2.5">
@@ -249,7 +257,7 @@
             <span class="flex size-10 shrink-0 items-center justify-center border border-neutral-200 text-sm font-semibold tabular-nums">2</span>
             <h3 class="text-lg font-semibold">Tick the formats</h3>
           </div>
-          <p class="mt-3 text-sm leading-relaxed text-neutral-500">Web, macOS, iOS, Windows — choose only the ones you need.</p>
+          <p class="mt-3 text-sm leading-relaxed text-neutral-500">Web, PWA, macOS, iOS, Windows — choose only the ones you need.</p>
         </div>
         <div class="reveal" style="transition-delay:150ms">
           <div class="flex items-center gap-3">
@@ -273,11 +281,15 @@
           <!-- card -->
           <div class="reveal rounded-2xl border border-neutral-200 bg-white p-6">
             <h3 class="text-base font-semibold">Web favicons</h3>
-            <p class="mt-1.5 text-sm leading-relaxed text-neutral-500"><span class="text-neutral-800">favicon.ico</span> (16/32/48), PNG set, <span class="text-neutral-800">apple-touch-icon</span> and <span class="text-neutral-800">android-chrome</span> 192/512.</p>
+            <p class="mt-1.5 text-sm leading-relaxed text-neutral-500"><span class="text-neutral-800">favicon.ico</span> (16/32/48), <span class="text-neutral-800">favicon.svg</span>, PNG set, <span class="text-neutral-800">apple-touch-icon</span> and <span class="text-neutral-800">android-chrome</span> 192/512.</p>
           </div>
           <div class="reveal rounded-2xl border border-neutral-200 bg-white p-6" style="transition-delay:50ms">
-            <h3 class="text-base font-semibold">macOS .icns</h3>
-            <p class="mt-1.5 text-sm leading-relaxed text-neutral-500">A single <span class="text-neutral-800">icon.icns</span> compiled from 16 all the way up to 1024, ready for your app bundle.</p>
+            <h3 class="text-base font-semibold">PWA</h3>
+            <p class="mt-1.5 text-sm leading-relaxed text-neutral-500">Standard <span class="text-neutral-800">any</span> icons plus <span class="text-neutral-800">maskable</span> ones (safe-zone padded) and a full <span class="text-neutral-800">manifest.webmanifest</span> — installs cleanly on Android &amp; desktop.</p>
+          </div>
+          <div class="reveal rounded-2xl border border-neutral-200 bg-white p-6" style="transition-delay:100ms">
+            <h3 class="text-base font-semibold">macOS icons</h3>
+            <p class="mt-1.5 text-sm leading-relaxed text-neutral-500">A single <span class="text-neutral-800">icon.icns</span> compiled from 16 up to 1024, plus an <span class="text-neutral-800">AppIcon.appiconset</span> ready to drop into Xcode.</p>
           </div>
           <div class="reveal rounded-2xl border border-neutral-200 bg-white p-6" style="transition-delay:100ms">
             <h3 class="text-base font-semibold">iOS AppIcon set</h3>
@@ -360,8 +372,8 @@
           <svg class="size-4" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
           GitHub
         </a>
-        <!-- TODO: set your Ko-fi / Stripe / Buy Me a Coffee URL. -->
-        <a href="#" class="transition hover:text-white">Buy me a coffee</a>
+        <!-- Hidden for now — restore once a Ko-fi / Stripe / Buy Me a Coffee URL is set. -->
+        <!-- <a href="#" class="transition hover:text-white">Buy me a coffee</a> -->
         <span class="flex items-center gap-1.5">Made with
           <span class="heartbeat text-red-200" aria-hidden="true"><svg class="size-3.5" viewBox="0 0 24 24" fill="currentColor"><path d="M11.645 20.91l-.007-.003-.022-.012a15.247 15.247 0 01-.383-.218 25.18 25.18 0 01-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0112 5.052 5.5 5.5 0 0116.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 01-4.244 3.17 15.247 15.247 0 01-.383.219l-.022.012-.007.004-.003.001a.752.752 0 01-.704 0l-.003-.001z" /></svg></span>
           <span class="sr-only">love</span> in Canada <span aria-hidden="true">🇨🇦</span> by <a href="https://dominicmartineau.com" target="_blank" rel="noopener" class="font-medium text-white underline-offset-4 transition hover:underline">Dominic Martineau</a>
@@ -391,11 +403,11 @@
           Download for macOS
           <svg class="size-4" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 3v7m0 0l3-3m-3 3L5 7M3 13h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </a>
-        <!-- TODO: set your Ko-fi / Stripe / Buy Me a Coffee URL. -->
-        <a href="#" data-coffee
+        <!-- Hidden for now — restore once a Ko-fi / Stripe / Buy Me a Coffee URL is set. -->
+        <!-- <a href="#" data-coffee
            class="inline-flex h-11 items-center justify-center gap-2 rounded-xl border border-neutral-200 bg-white px-6 text-sm font-semibold text-neutral-900 transition hover:bg-neutral-50">
           <span aria-hidden="true">☕</span> Buy me a coffee
-        </a>
+        </a> -->
       </div>
 
       <p class="mt-4 text-center text-xs text-neutral-400">macOS 14 or later · .dmg</p>
