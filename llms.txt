@@ -20,5 +20,5 @@ Luere turns large images into small files without visibly hurting quality, with 
 
 ## Links
 - Home & download (.dmg): https://luere.app/
-- Maker: Dominic Martineau — https://dominicmartineau.com
+- Maker: Wibeset — https://wibeset.ca
 - French version: https://luere.app/fr/
