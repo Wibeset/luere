@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Luere Icon Studio — Un logo. Toutes les icônes.</title>
-  <meta name="description" content="Luere Icon Studio est une app macOS rapide, privée et gratuite qui transforme un seul logo en toutes les tailles d'icônes et de favicons dont vous avez besoin — .icns, .ico, jeux de PNG, favicon.svg, icônes maskable PWA, icônes Apple touch, jeu AppIcon iOS et manifest web — exportés en un clic." />
+  <meta name="description" content="Luere Icon Studio est une app macOS rapide, privée et gratuite qui transforme un seul logo en toutes les tailles d'icônes et de favicons dont vous avez besoin — .icns, .ico, jeux de PNG, favicon.svg, icônes maskable PWA, icônes Apple touch, jeu AppIcon iOS, icônes de lanceur Android et manifest web — exportés en un clic." />
   <link rel="canonical" href="https://luere.app/fr/icon-studio/" />
   <link rel="alternate" hreflang="en" href="https://luere.app/icon-studio/" />
   <link rel="alternate" hreflang="fr" href="https://luere.app/fr/icon-studio/" />
@@ -18,7 +18,7 @@
   <meta property="og:site_name" content="Luere Icon Studio" />
   <meta property="og:locale" content="fr_CA" />
   <meta property="og:title" content="Luere Icon Studio — Un logo. Toutes les icônes." />
-  <meta property="og:description" content="Transformez un seul logo en toutes les tailles d'icônes et de favicons — .icns, .ico, jeux de PNG, favicon.svg, icônes maskable PWA, icônes Apple touch et manifest web. Sur votre Mac, en un clic." />
+  <meta property="og:description" content="Transformez un seul logo en toutes les tailles d'icônes et de favicons — .icns, .ico, jeux de PNG, favicon.svg, icônes maskable PWA, icônes Apple touch, icônes de lanceur Android et manifest web. Sur votre Mac, en un clic." />
   <meta property="og:url" content="https://luere.app/fr/icon-studio/" />
   <meta property="og:image" content="https://luere.app/assets/og-icon-studio.png" />
   <meta property="og:image:alt" content="Luere Icon Studio — toutes les tailles d'icônes à partir d'un seul logo" />
@@ -43,7 +43,7 @@
     "applicationCategory": "DeveloperApplication",
     "operatingSystem": "macOS 14",
     "inLanguage": "fr",
-    "description": "Une app macOS rapide, privée et gratuite qui transforme un seul logo en tous les formats d'icônes et de favicons dont vous avez besoin — favicons web (.ico + .svg + PNG), icônes maskable PWA et manifest, un .icns macOS plus un AppIcon.appiconset, un jeu AppIcon iOS et des .ico + PNG Windows — plus un extrait HTML prêt à coller et un manifest web. Tout se passe sur l'appareil.",
+    "description": "Une app macOS rapide, privée et gratuite qui transforme un seul logo en tous les formats d'icônes et de favicons dont vous avez besoin — favicons web (.ico + .svg + PNG), icônes maskable PWA et manifest, un .icns macOS plus un AppIcon.appiconset, un jeu AppIcon iOS, des icônes de lanceur Android (adaptatives, rondes et Play Store) et des .ico + PNG Windows — plus un extrait HTML prêt à coller et un manifest web. Tout se passe sur l'appareil.",
     "url": "https://luere.app/fr/icon-studio/",
     "image": "https://luere.app/assets/og-icon-studio.png",
     "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
@@ -111,8 +111,8 @@
 
       <p class="reveal mt-5 max-w-xl text-lg text-pretty text-neutral-500" style="transition-delay:150ms">
         Luere Icon Studio transforme une seule image en toutes les tailles
-        d'icônes et de favicons dont vous avez besoin — web, macOS, iOS et
-        Windows — écrites dans un dossier bien rangé à côté de votre source, en
+        d'icônes et de favicons dont vous avez besoin — web, macOS, iOS,
+        Android et Windows — écrites dans un dossier bien rangé à côté de votre source, en
         un seul clic.
       </p>
 
@@ -132,8 +132,8 @@
       </div><!-- /colonne gauche -->
 
       <!-- ---------------- Maquette de l'app (colonne droite) ----------------
-           Reproduit la vraie app macOS : une fenêtre 500×560 avec une zone de
-           dépôt en pointillés, une liste de formats (les cinq cochés par
+           Reproduit la vraie app macOS : une fenêtre 500×604 avec une zone de
+           dépôt en pointillés, une liste de formats (les six cochés par
            défaut) et un pied avec la barre de progression, « Afficher dans le
            Finder » et « Exporter les icônes ».
            TODO : remplacer par une vraie capture d'écran (p. ex.
@@ -199,6 +199,13 @@
                 <span class="block text-xs text-neutral-400">AppIcon.appiconset pour Xcode</span>
               </span>
             </label>
+            <label class="flex items-start gap-2.5">
+              <span class="demo-check mt-0.5 grid size-4 shrink-0 place-items-center rounded border border-transparent bg-brand-500 text-[10px] text-white"><span class="demo-tick">✓</span></span>
+              <span class="min-w-0">
+                <span class="block text-sm text-neutral-900">Icônes de lanceur Android</span>
+                <span class="block text-xs text-neutral-400">res/ mipmap + icône Play Store</span>
+              </span>
+            </label>
             <label class="demo-row4 flex items-start gap-2.5">
               <span id="demo-check4" class="demo-check mt-0.5 grid size-4 shrink-0 place-items-center rounded border border-transparent bg-brand-500 text-[10px] text-white"><span class="demo-tick">✓</span></span>
               <span class="min-w-0">
@@ -249,7 +256,7 @@
             <span class="flex size-10 shrink-0 items-center justify-center border border-neutral-200 text-sm font-semibold tabular-nums">2</span>
             <h3 class="text-lg font-semibold">Cochez les formats</h3>
           </div>
-          <p class="mt-3 text-sm leading-relaxed text-neutral-500">Web, PWA, macOS, iOS, Windows — ne choisissez que ceux dont vous avez besoin.</p>
+          <p class="mt-3 text-sm leading-relaxed text-neutral-500">Web, PWA, macOS, iOS, Android, Windows — ne choisissez que ceux dont vous avez besoin.</p>
         </div>
         <div class="reveal" style="transition-delay:150ms">
           <div class="flex items-center gap-3">
@@ -286,6 +293,10 @@
           <div class="reveal rounded-2xl border border-neutral-200 bg-white p-6" style="transition-delay:100ms">
             <h3 class="text-base font-semibold">Jeu AppIcon iOS</h3>
             <p class="mt-1.5 text-sm leading-relaxed text-neutral-500">Un <span class="text-neutral-800">AppIcon.appiconset</span> complet avec un master 1024px et <span class="text-neutral-800">Contents.json</span> — à glisser directement dans Xcode.</p>
+          </div>
+          <div class="reveal rounded-2xl border border-neutral-200 bg-white p-6" style="transition-delay:150ms">
+            <h3 class="text-base font-semibold">Icônes de lanceur Android</h3>
+            <p class="mt-1.5 text-sm leading-relaxed text-neutral-500">Un dossier <span class="text-neutral-800">res/</span> prêt à l'emploi : <span class="text-neutral-800">ic_launcher</span>, icônes rondes et adaptatives pour chaque densité (mdpi → xxxhdpi), plus une icône <span class="text-neutral-800">Play Store</span> de 512px.</p>
           </div>
           <div class="reveal rounded-2xl border border-neutral-200 bg-white p-6">
             <h3 class="text-base font-semibold">.ico + PNG Windows</h3>
